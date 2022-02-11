@@ -6,6 +6,12 @@
 Documentation of SVE
 ====================
 
+:Author: Eduardo Werley
+:Source: https://github.com/yelrew/sve
+:Issues: https://github.com/yelrew/sve/issues
+:Generated: |today|
+:Version: |release|
+
 .. .. toctree::
 
 
