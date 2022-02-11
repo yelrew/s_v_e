@@ -1,0 +1,366 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>sve package &mdash; sve 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="sve" href="modules.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sve
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">sve</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">sve package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sve.sve">sve.sve module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sve">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sve</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">sve</a> &raquo;</li>
+        
+      <li>sve package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/sve.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sve-package">
+<h1>sve package<a class="headerlink" href="#sve-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-sve.sve">
+<span id="sve-sve-module"></span><h2>sve.sve module<a class="headerlink" href="#module-sve.sve" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="sve.sve.Sve">
+<em class="property">class </em><code class="descclassname">sve.sve.</code><code class="descname">Sve</code><span class="sig-paren">(</span><em>rIni</em>, <em>rMin</em>, <em>rMax</em>, <em>stop</em>, <em>dMax=inf</em>, <em>dBox=False</em>, <em>debug=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sve/sve.html#Sve"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sve.sve.Sve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<blockquote>
+<div><p>A python class for the simplex vertex-edge optimizer.</p>
+<p>The SVE method seeks to find a stationary point <cite>x[0..n-1]</cite> of the <cite>n</cite>-argument
+function <cite>F</cite> by dynamically adjusting random probe simplexes centered on the current
+guess <cite>x*[0..n-1]</cite>.</p>
+<dl class="docutils">
+<dt>rIni <span class="classifier-delimiter">:</span> <span class="classifier"><cite>float</cite></span></dt>
+<dd>Initial simplex radius</dd>
+<dt>rMin <span class="classifier-delimiter">:</span> <span class="classifier"><cite>float</cite></span></dt>
+<dd>Minimum simplex radius</dd>
+<dt>rMax <span class="classifier-delimiter">:</span> <span class="classifier"><cite>float</cite></span></dt>
+<dd>Maximum simplex radius</dd>
+<dt>stop <span class="classifier-delimiter">:</span> <span class="classifier"><cite>float</cite>, default <cite>inf</cite></span></dt>
+<dd>The Maximum distance over sucessive guesses (x).</dd>
+<dt>dBox <span class="classifier-delimiter">:</span> <span class="classifier"><cite>bool</cite>, default <cite>False</cite></span></dt>
+<dd>If True, indicates that the search domain is an an <cite>n</cite>-dimensional
+cube with side 2*`dMax`. If False, the domain is a ball with radius <cite>dMax</cite>.</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>dMax <span class="classifier-delimiter">:</span> <span class="classifier"><cite>float</cite> , default <cite>inf</cite></span></dt>
+<dd><blockquote class="first">
+<div>Maximum search domain value. The half-side of a cube or the radius of a ball,
+according to <cite>dBox</cite>.</div></blockquote>
+<dl class="docutils">
+<dt>debug <span class="classifier-delimiter">:</span> <span class="classifier"><cite>bool</cite> , default False.</span></dt>
+<dd>Print diagnostic messages if True.</dd>
+</dl>
+<p class="last">The parameters of the SVE object are basically the various distances
+(<cite>rIni</cite>, <cite>rMin</cite>, <cite>rMax</cite>) that characterize a simplex, as well as the optimization
+direction (<cite>direction</cite>), the stop criteria (<cite>stop</cite>), and information regarding
+the search domain (<cite>dBox</cite> and <cite>dMax</cite>).</p>
+</dd>
+</dl>
+<dl class="staticmethod">
+<dt id="sve.sve.Sve.bool_t">
+<em class="property">static </em><code class="descname">bool_t</code><span class="sig-paren">(</span><em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sve/sve.html#Sve.bool_t"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sve.sve.Sve.bool_t" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="sve.sve.Sve.iterate">
+<code class="descname">iterate</code><span class="sig-paren">(</span><em>x0</em>, <em>F</em>, <em>fparams=[]</em>, <em>direction='NEG'</em>, <em>maxIters=300</em>, <em>OK=None</em>, <em>stop_if_dFx_lt_tol=False</em>, <em>tol_dfx=0.001</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sve/sve.html#Sve.iterate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sve.sve.Sve.iterate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterative quadratic optimization by the simplex vertex-edge method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x0</strong> (<cite>list</cite> [ <cite>float</cite> ], (n,)) – Initial guess</li>
+<li><strong>F</strong> (<em>callable</em>) – Function to be optimized, with signature <cite>F(x, *fparams)</cite>.
+It should compute some function of the point <cite>x[0..n-1]</cite>, with
+optional arguments (fparams)</li>
+<li><strong>fparams</strong> (<em>list, optional</em>) – A list of optional arguments to pass to F, by default an empy list [].</li>
+<li><strong>direction</strong> (<em>{‘NEG’, ‘POS’, ‘ZERO’}</em>) – Optimization direction. If ‘POS’, the procedure looks for a local
+maximum of {F}. If ‘NEG’, it looks for a local minimum. If ‘ZERO’,
+a stationary point of {F} is sought.</li>
+<li><strong>maxIters</strong> (<em>int, optional, by default 300</em>) – Maximum number of iterations</li>
+<li><strong>OK</strong> (<em>callable, optional, by default None.</em>) – Optional function that implements a given stop criteria. Need to have
+the signature OK(n, x, Fx). If <cite>True</cite> is returned, the iterative process ends.</li>
+<li><strong>stop_if_dFx_lt_tol</strong> (<em>bool, default False</em>) – If <cite>True</cite>, stop the iterative procedure when the maximum absolute
+diference between successive guesses F(x*) is less then <cite>tol_dfx</cite>.</li>
+<li><strong>tol_dfx</strong> (<cite>float</cite>, by default 1e-3.) – Maximum absolute difference over successive guesses of the function value F(x*).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p><strong>outdata</strong> – The output data has the following entries:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">X</span></code></dt>
+<dd><p class="first last">A <cite>numpy.ndarray</cite> of dimension (niter, n+1) with the values of the
+optimal guesses (x*) at each iteration.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Fx</span></code></dt>
+<dd><dl class="first last docutils">
+<dt>A <cite>numpy.ndarray</cite> of dimension (niter,) with the values of the</dt>
+<dd><p class="first last">Fx(x*) at each iteration.</p>
+</dd>
+</dl>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&quot;v&quot;</span></code></dt>
+<dd><p class="first last">A <cite>numpy.ndarray</cite> of dimension (niter,n*(n+1)) with the simplex
+centers at each iteration.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&quot;nit&quot;</span></code></dt>
+<dd><p class="first last">Number of iterations (<cite>int</cite>) performed by the method.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&quot;nit&quot;</span></code></dt>
+<dd><p class="first last">Number of functino evalueations (<cite>int</cite>).</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">&quot;maxiter&quot;</span></code></dt>
+<dd><p class="first last">Maximum number of iterations considered.</p>
+</dd>
+</dl>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><cite>dict</cite></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>At each iteration, the SVE method chooses a random probe simplex centered
+on the current guess {x[0..n-1]}. The radius {r} of the simplex is dynamically
+adjusted, starting with {rIni} but staying within the range [ <cite>rMin</cite> _ <cite>rMax</cite>].</p>
+<p>The iterations will stop when:
+A) the current guess {x} satisfies the predicate {OK(n,x,F(n,x))}
+B) the distance between successive guesses (delta x*) is less than <cite>stop</cite>
+C) the quadratic minimization loop has been performed <cite>maxIters</cite> times.
+D) the flag <cite>stop_if_dFx_lt_tol</cite> is <cite>True</cite>, and delta F(x*) is less then ` tol_dfx`.</p>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="sve.sve.Sve.sign_t">
+<em class="property">static </em><code class="descname">sign_t</code><span class="sig-paren">(</span><em>var</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sve/sve.html#Sve.sign_t"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sve.sve.Sve.sign_t" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sve">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-sve" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="modules.html" class="btn btn-neutral" title="sve" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Eduardo Werley / Jorge Stolfi.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

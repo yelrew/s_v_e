@@ -1,0 +1,29 @@
+sve package
+===========
+
+Subpackages
+-----------
+
+.. toctree::
+
+    sve.tests
+
+Submodules
+----------
+
+sve.sve module
+--------------
+
+.. automodule:: sve.sve
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: sve
+    :members:
+    :undoc-members:
+    :show-inheritance:
